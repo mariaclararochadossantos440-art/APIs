@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071a12,
+            #0b2e1d,
+            #12452b
+        );
+
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #8cffb2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cotacao {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.principal {
+    background: rgba(30, 180, 80, 0.15);
+
+    border: 1px solid rgba(100, 255, 150, 0.3);
+}
+
+.titulo {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #c9d8cf;
+
+    font-size: 16px;
+}
+
+.card strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.principal strong {
+    color: #62ff91;
+
+    font-size: 42px;
+}
+
+#dataAtualizacao {
+    color: #9baea2;
+
+    font-size: 13px;
+}
+
+.status {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 30px;
+
+    color: #c7d5cc;
+
+    font-size: 14px;
+}
+
+.bolinha {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background-color: #43ff78;
+
+    box-shadow:
+        0 0 10px #43ff78;
+}
+
+.atualizacao {
+    margin-top: 15px;
+
+    color: #7f9588;
+
+    font-size: 13px;
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .cotacao {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 25px 15px;
+    }
+
+    .principal strong {
+        font-size: 36px;
+    }
+}

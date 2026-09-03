@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+
+    color: #333;
+}
+
+.container > p {
+    margin-bottom: 30px;
+
+    color: #777;
+}
+
+.cards {
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 230px;
+
+    padding: 30px 20px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    background: #f8f9fc;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #675cff;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #777;
+
+    line-height: 1.5;
+}
+
+.consulta {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 30px 0;
+}
+
+input {
+    width: 300px;
+
+    padding: 14px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #675cff;
+}
+
+button {
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #675cff;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5146e5;
+
+    transform: scale(1.05);
+}
+
+.resultado {
+    margin-top: 30px;
+
+    background: #f8f9fc;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    line-height: 2;
+
+    color: #333;
+}
+
+.resultado:empty {
+    display: none;
+}
+
+.voltar {
+    display: block;
+
+    text-align: left;
+
+    margin-bottom: 30px;
+
+    text-decoration: none;
+
+    color: #675cff;
+
+    font-weight: bold;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .consulta {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+}

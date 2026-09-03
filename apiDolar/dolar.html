@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cotação do Dólar</title>
+
+    <link rel="stylesheet" href="dolar.css">
+</head>
+</head>
+
+<body>
+
+    <main class="container">
+        
+
+        <header>
+            <h1>Cotação do Dólar</h1>
+            <p>USD / BRL</p>
+        </header>
+
+        <section class="cotacao">
+
+            <div class="card principal">
+                <span class="titulo">Valor do Dólar</span>
+                <strong id="valorDolar">R$ 0,00</strong>
+                <span id="dataAtualizacao">Atualizando...</span>
+            </div>
+
+            <div class="card">
+                <span class="titulo">Maior valor do dia</span>
+                <strong id="maiorDolar">R$ 0,00</strong>
+            </div>
+
+            <div class="card">
+                <span class="titulo">Menor valor do dia</span>
+                <strong id="menorDolar">R$ 0,00</strong>
+            </div>
+
+        </section>
+
+        <div class="status">
+            <span class="bolinha"></span>
+            <span id="status">Buscando cotação...</span>
+        </div>
+
+        <p class="atualizacao">
+            Atualização automática a cada 10 segundos
+        </p>
+        <br>
+        <h3><a href="../index.html">Voltar</a></h3>
+
+    </main>
+
+    <script src="dolar.js"></script>
+    
+    
+
+</body>
+</html>
